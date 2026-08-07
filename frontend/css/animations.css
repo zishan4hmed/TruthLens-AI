@@ -1,0 +1,481 @@
+/* ==========================================
+   TruthLens AI - Animations
+==========================================*/
+
+/* Fade In */
+
+.fade-in{
+
+    animation:fadeIn 1s ease forwards;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Fade Up */
+
+.fade-up{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Fade Down */
+
+.fade-down{
+
+    animation:fadeDown .9s ease forwards;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Slide Left */
+
+.slide-left{
+
+    animation:slideLeft 1s ease forwards;
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Slide Right */
+
+.slide-right{
+
+    animation:slideRight 1s ease forwards;
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Floating */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Pulse */
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Glow */
+
+.glow{
+
+    animation:glow 2.5s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:0 0 10px rgba(79,195,247,.25);
+
+    }
+
+    to{
+
+        box-shadow:
+        0 0 25px rgba(79,195,247,.55),
+        0 0 50px rgba(79,195,247,.25);
+
+    }
+
+}
+
+/* Rotate */
+
+.rotate{
+
+    animation:rotate 15s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Bounce */
+
+.bounce{
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+/* Scale Hover */
+
+.scale-hover{
+
+    transition:.35s;
+
+}
+
+.scale-hover:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Lift Hover */
+
+.lift{
+
+    transition:.35s;
+
+}
+
+.lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* Card Hover */
+
+.card-hover{
+
+    transition:.35s ease;
+
+}
+
+.card-hover:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+/* Button Hover */
+
+.btn-hover{
+
+    transition:.35s;
+
+}
+
+.btn-hover:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* Ripple */
+
+.ripple{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    background:rgba(255,255,255,.25);
+
+    border-radius:50%;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.6s;
+
+}
+
+.ripple:hover::after{
+
+    width:320px;
+
+    height:320px;
+
+    opacity:0;
+
+}
+
+/* Loader Rotation */
+
+.loader-spin{
+
+    animation:loaderSpin 1s linear infinite;
+
+}
+
+@keyframes loaderSpin{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Shimmer */
+
+.shimmer{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shimmer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.18),
+
+        transparent
+
+    );
+
+    animation:shimmer 2.2s infinite;
+
+}
+
+@keyframes shimmer{
+
+    100%{
+
+        left:150%;
+
+    }
+
+}
+
+/* Delays */
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
+
+.delay-5{
+
+    animation-delay:1s;
+
+}

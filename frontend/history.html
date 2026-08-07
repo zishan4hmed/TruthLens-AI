@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>History | TruthLens AI</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+<link
+    rel="stylesheet"
+    href="css/dashboard.css"
+>
+
+<link
+    rel="stylesheet"
+    href="css/history.css"
+>
+
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+>
+
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>
+            TruthLens AI
+        </h2>
+
+        <ul>
+
+            <li
+                onclick="window.location.href='dashboard.html'"
+            >
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </li>
+
+
+            <li class="active">
+
+                <i class="ri-history-line"></i>
+                History
+
+            </li>
+
+
+            <li
+                onclick="window.location.href='savedReports.html'"
+            >
+                <i class="ri-bookmark-line"></i>
+                Saved Reports
+            </li>
+
+
+            <li
+                onclick="window.location.href='profile.html'"
+            >
+                <i class="ri-user-line"></i>
+                Profile
+            </li>
+
+
+            <li id="logoutBtn">
+
+                <i class="ri-logout-box-line"></i>
+                Logout
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- Main -->
+
+    <main class="history-main">
+
+
+        <div class="history-header">
+
+            <h1>
+                Analysis History
+            </h1>
+
+            <p>
+                View your previous TruthLens AI analyses.
+            </p>
+
+        </div>
+
+
+        <div
+            id="historyContainer"
+            class="history-container"
+        >
+
+            <div class="history-empty">
+
+                <i class="ri-loader-4-line"></i>
+
+                <h3>
+                    Loading History...
+                </h3>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+<script src="js/api.js"></script>
+
+<script src="js/history.js"></script>
+
+</body>
+
+</html>

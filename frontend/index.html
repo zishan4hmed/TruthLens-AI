@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TruthLens AI | Premium AI Fake News Detector</title>
+
+    <meta name="description"
+        content="TruthLens AI is a next-generation AI-powered fake news detector that verifies articles, headlines, social media posts and online information in seconds.">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/analyzer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="bg-blur bg-1"></div>
+    <div class="bg-blur bg-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+
+                <i class="ri-shield-check-line"></i>
+
+                <span class="logo-text">
+                    TruthLens
+                    <span>AI</span>
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#analyzer">Analyzer</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    id="loginBtn"
+                    class="btn btn-outline">
+
+                    Login
+
+                </button>
+
+                <button
+                    id="dashboardBtn"
+                    class="btn btn-primary">
+
+                    Get Started
+
+                </button>
+
+            </div>
+
+            <button class="mobile-menu-btn">
+
+                <i class="ri-menu-line"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <!-- Left -->
+
+            <div class="hero-left">
+
+                <span class="hero-badge">
+
+                    <i class="ri-ai-generate"></i>
+
+                    Powered by Artificial Intelligence
+
+                </span>
+
+                <h1>
+
+                    Detect
+                    <span>Fake News</span>
+
+                    Before It
+                    <br>
+
+                    Goes Viral.
+
+                </h1>
+
+                <p class="hero-subtitle">
+
+                    TruthLens AI uses Natural Language Processing,
+                    Machine Learning and Trusted Fact Sources
+                    to instantly analyze news articles,
+                    social media posts and headlines.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button id="analyzeNowBtn" class="btn btn-primary">
+
+                        <i class="ri-search-eye-line"></i>
+
+                        Analyze Now
+
+                    </button>
+
+                    <button id="watchDemoBtn" class="btn btn-outline">
+
+                        <i class="ri-play-circle-line"></i>
+
+                        Watch Demo
+
+                    </button>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat-card">
+
+                        <h2>98%</h2>
+
+                        <p>Accuracy</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h2>50K+</h2>
+
+                        <p>Articles Checked</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h2>24/7</h2>
+
+                        <p>AI Monitoring</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="hero-right">
+
+                <div class="hero-visual">
+
+                    <div class="floating-card card-one">
+
+                        <div class="card-icon">
+
+                            <i class="ri-shield-check-fill"></i>
+
+                        </div>
+
+                        <h3>Verified</h3>
+
+                        <p>
+
+                            Trusted by AI
+
+                        </p>
+
+                    </div>
+
+                    <div class="floating-card card-two">
+
+                        <div class="card-icon warning">
+
+                            <i class="ri-error-warning-fill"></i>
+
+                        </div>
+
+                        <h3>Fake Alert</h3>
+
+                        <p>
+
+                            Confidence 94%
+
+                        </p>
+
+                    </div>
+
+                    <div class="floating-card card-three">
+
+                        <div class="card-icon success">
+
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                        </div>
+
+                        <h3>Authentic</h3>
+
+                        <p>
+
+                            Reliable Source
+
+                        </p>
+
+                    </div>
+
+                    <div class="ai-circle">
+
+                        <div class="outer-ring"></div>
+                        <div class="middle-ring"></div>
+                        <div class="inner-ring"></div>
+
+                        <div class="ai-core">
+
+                            <i class="ri-ai-generate"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ===========================
+         FEATURES
+    ============================ -->
+
+    <section class="features" id="features">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    <i class="ri-flashlight-line"></i>
+                    Premium Features
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Everything You Need to
+                    <span>Verify Information</span>
+
+                </h2>
+
+                <p class="section-description">
+
+                    TruthLens AI combines powerful Artificial Intelligence,
+                    Natural Language Processing, trusted fact-checking databases
+                    and credibility analysis to help you distinguish truth from misinformation.
+
+                </p>
+
+            </div>
+
+            <div class="features-grid">
+
+                <!-- Card 1 -->
+
+                <div class="feature-card glass-card">
+
+                    <div class="feature-icon">
+
+                        <i class="ri-ai-generate"></i>
+
+                    </div>
+
+                    <h3>
+
+                        AI Detection
+
+                    </h3>
+
+                    <p>
+
+                        Advanced Machine Learning models analyze
+                        headlines, articles and social posts for
+                        misinformation patterns.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="feature-card glass-card">
+
+                    <div class="feature-icon">
+
+                        <i class="ri-shield-check-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Credibility Score
+
+                    </h3>
+
+                    <p>
+
+                        Every article receives a confidence score
+                        based on multiple trusted verification
+                        signals and AI predictions.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="feature-card glass-card">
+
+                    <div class="feature-icon">
+
+                        <i class="ri-database-2-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Trusted Sources
+
+                    </h3>
+
+                    <p>
+
+                        Cross-check information using verified
+                        databases and authoritative
+                        fact-checking organizations.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="feature-card glass-card">
+
+                    <div class="feature-icon">
+
+                        <i class="ri-bar-chart-grouped-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Sentiment Analysis
+
+                    </h3>
+
+                    <p>
+
+                        Detect emotional manipulation,
+                        clickbait language and misleading
+                        writing styles automatically.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="feature-card glass-card">
+
+                    <div class="feature-icon">
+
+                        <i class="ri-global-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Multi Language
+
+                    </h3>
+
+                    <p>
+
+                        Analyze news written in different
+                        languages with AI-powered translation
+                        and verification.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 6 -->
+
+                <div class="feature-card glass-card">
+
+                    <div class="feature-icon">
+
+                        <i class="ri-time-line"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Real-Time Results
+
+                    </h3>
+
+                    <p>
+
+                        Receive fake news probability,
+                        explanations and source analysis
+                        within seconds.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         ANALYZER
+    ============================ -->
+
+    <!-- ==========================================
+     AI ANALYZER SECTION
+========================================== -->
+
+<section class="analyzer-section" id="analyzer">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                <i class="ri-ai-generate"></i>
+                AI Powered Analysis
+            </span>
+
+            <h2>
+                Analyze Any News
+                <span>In Seconds</span>
+            </h2>
+
+            <p>
+                Paste a news article, headline or social media post.
+                TruthLens AI will analyze credibility, clickbait,
+                sentiment and generate an AI explanation.
+            </p>
+
+        </div>
+
+        <div class="analyzer-container">
+
+            <!-- LEFT PANEL -->
+
+            <div class="analyzer-left">
+
+                <h3 class="analyzer-title">
+
+                    AI Fake News Detector
+
+                </h3>
+
+                <p class="analyzer-subtitle">
+
+                    Our AI evaluates news using multiple NLP signals,
+                    credibility scoring and fact-checking techniques.
+
+                </p>
+
+                <div class="input-wrapper">
+
+                    <textarea
+                        id="newsInput"
+                        placeholder="Paste your news article here...
+
+Example:
+
+Scientists announce a breakthrough in renewable energy...
+
+or paste any social media post, article or headline."
+                    ></textarea>
+
+                    <div class="character-count">
+
+                        <span id="charCount">
+
+                            0 Characters
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Toolbar -->
+
+                <div class="analyzer-toolbar">
+
+                    <div class="toolbar-left">
+
+                        <button class="tool-btn">
+
+                            <i class="ri-file-upload-line"></i>
+
+                            Upload PDF
+
+                        </button>
+
+                        <button class="tool-btn">
+
+                            <i class="ri-links-line"></i>
+
+                            Paste URL
+
+                        </button>
+
+                    </div>
+
+                    <button id="analyzeBtn">
+
+                        <i class="ri-sparkling-2-line"></i>
+
+                        Analyze with AI
+
+                    </button>
+
+                </div>
+
+                <!-- AI Features -->
+
+                <div class="ai-features">
+
+                    <div class="ai-chip">
+
+                        <i class="ri-brain-line"></i>
+
+                        NLP
+
+                    </div>
+
+                    <div class="ai-chip">
+
+                        <i class="ri-search-eye-line"></i>
+
+                        Fact Check
+
+                    </div>
+
+                    <div class="ai-chip">
+
+                        <i class="ri-shield-check-line"></i>
+
+                        Source Trust
+
+                    </div>
+
+                    <div class="ai-chip">
+
+                        <i class="ri-line-chart-line"></i>
+
+                        Bias Detection
+
+                    </div>
+
+                </div>
+
+                <!-- Security -->
+
+                <div class="security-box">
+
+                    <div class="security-left">
+
+                        <i class="ri-shield-star-line"></i>
+
+                        <div>
+
+                            <div class="security-title">
+
+                                Secure AI Analysis
+
+                            </div>
+
+                            <div class="security-subtitle">
+
+                                Your submitted news is processed securely.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="security-status">
+
+                        Encrypted
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL -->
+
+            <div class="analyzer-right">
+                <div class="analyzer-right">
+                                    <!-- Result Card -->
+
+                <div class="result-card">
+
+                    <div class="result-header">
+
+                        <h3>
+
+                            AI Analysis Report
+
+                        </h3>
+
+                        <div class="live-status">
+
+                            <span></span>
+
+                            Live AI
+
+                        </div>
+
+                    </div>
+
+                    <!-- Empty State -->
+
+                    <div class="result-placeholder" id="resultPlaceholder">
+
+                        <i class="ri-ai-generate"></i>
+
+                        <h3>
+
+                            Ready for Analysis
+
+                        </h3>
+
+                        <p>
+
+                            Paste an article and click
+                            <strong>Analyze with AI</strong>.
+                            Your detailed AI report will appear here.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Analysis Result -->
+
+                    <div
+                        id="analysisResult"
+                        style="display:none;"
+                    >
+
+                        <!-- Confidence -->
+
+                        <div class="confidence-circle">
+
+                            <div class="circle-value">
+
+                                <h2 id="confidenceValue">
+
+                                    0%
+
+                                </h2>
+
+                                <p>
+
+                                    Confidence
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Status -->
+
+                        <div
+                            class="news-status"
+                            id="newsStatus"
+                        >
+
+                            Waiting...
+
+                        </div>
+
+                        <!-- AI Thinking -->
+
+                        <div class="ai-thinking">
+
+                            <h4>
+
+                                <i class="ri-cpu-line"></i>
+
+                                AI Processing
+
+                            </h4>
+
+                            <div class="thinking-step">
+
+                                <span>
+
+                                    Cleaning text
+
+                                </span>
+
+                                <div
+                                    class="step-loader"
+                                ></div>
+
+                            </div>
+
+                            <div class="thinking-step">
+
+                                <span>
+
+                                    Detecting clickbait
+
+                                </span>
+
+                                <div
+                                    class="step-loader"
+                                ></div>
+
+                            </div>
+
+                            <div class="thinking-step">
+
+                                <span>
+
+                                    Checking credibility
+
+                                </span>
+
+                                <div
+                                    class="step-loader"
+                                ></div>
+
+                            </div>
+
+                            <div class="thinking-step">
+
+                                <span>
+
+                                    Generating explanation
+
+                                </span>
+
+                                <div
+                                    class="step-loader"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Explanation -->
+
+                <div
+                    class="explanation-card"
+                    id="explanationCard"
+                    style="display:none;"
+                >
+
+                    <h3>
+
+                        <i class="ri-robot-2-line"></i>
+
+                        AI Explanation
+
+                    </h3>
+
+                    <p id="analysisMessage">
+
+                        Waiting for analysis...
+
+                    </p>
+
+                </div>
+
+                <!-- Summary -->
+
+                <div
+                    class="summary-card"
+                    id="summaryCard"
+                    style="display:none;"
+                >
+
+                    <h3>
+
+                        <i class="ri-file-text-line"></i>
+
+                        AI Summary
+
+                    </h3>
+
+                    <p id="summaryText">
+
+                        AI summary will appear here.
+
+                    </p>
+
+                </div>
+                                <!-- AI Metrics -->
+
+                <div
+                    class="metrics-grid"
+                    id="metricsGrid"
+                    style="display:none;"
+                >
+
+                    <div class="metric-card">
+
+                        <div class="metric-title">
+
+                            <span>Source Credibility</span>
+
+                            <span
+                                class="metric-value"
+                                id="credibilityValue"
+                            >
+
+                                95%
+
+                            </span>
+
+                        </div>
+
+                        <div class="metric-progress">
+
+                            <span
+                                id="credibilityBar"
+                                style="width:95%;"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="metric-card">
+
+                        <div class="metric-title">
+
+                            <span>Clickbait Score</span>
+
+                            <span
+                                class="metric-value"
+                                id="clickbaitValue"
+                            >
+
+                                12%
+
+                            </span>
+
+                        </div>
+
+                        <div class="metric-progress">
+
+                            <span
+                                id="clickbaitBar"
+                                style="width:12%;"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="metric-card">
+
+                        <div class="metric-title">
+
+                            <span>Political Bias</span>
+
+                            <span
+                                class="metric-value"
+                                id="biasValue"
+                            >
+
+                                Low
+
+                            </span>
+
+                        </div>
+
+                        <div class="metric-progress">
+
+                            <span
+                                id="biasBar"
+                                style="width:22%;"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="metric-card">
+
+                        <div class="metric-title">
+
+                            <span>Sentiment</span>
+
+                            <span
+                                class="metric-value"
+                                id="sentimentValue"
+                            >
+
+                                Neutral
+
+                            </span>
+
+                        </div>
+
+                        <div class="metric-progress">
+
+                            <span
+                                id="sentimentBar"
+                                style="width:55%;"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Trusted Sources -->
+
+                <div
+                    class="sources-card"
+                    id="sourcesCard"
+                    style="display:none;"
+                >
+
+                    <h3>
+
+                        <i class="ri-global-line"></i>
+
+                        Trusted Sources
+
+                    </h3>
+
+                    <div class="source-item">
+
+                        <div class="source-name">
+
+                            <span class="source-dot"></span>
+
+                            Reuters
+
+                        </div>
+
+                        <div style="display:flex;align-items:center;">
+
+                            <div class="source-bar">
+
+                                <span style="width:98%;"></span>
+
+                            </div>
+
+                            <div class="source-score">
+
+                                98%
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="source-item">
+
+                        <div class="source-name">
+
+                            <span class="source-dot"></span>
+
+                            BBC
+
+                        </div>
+
+                        <div style="display:flex;align-items:center;">
+
+                            <div class="source-bar">
+
+                                <span style="width:96%;"></span>
+
+                            </div>
+
+                            <div class="source-score">
+
+                                96%
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="source-item">
+
+                        <div class="source-name">
+
+                            <span class="source-dot"></span>
+
+                            Associated Press
+
+                        </div>
+
+                        <div style="display:flex;align-items:center;">
+
+                            <div class="source-bar">
+
+                                <span style="width:99%;"></span>
+
+                            </div>
+
+                            <div class="source-score">
+
+                                99%
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Report Actions -->
+
+                <div
+                    class="report-actions"
+                    id="reportActions"
+                    style="display:none;"
+                >
+
+                    <button class="report-btn primary">
+
+                        <i class="ri-save-line"></i>
+
+                        Save Report
+
+                    </button>
+
+                    <button class="report-btn secondary">
+
+                        <i class="ri-download-2-line"></i>
+
+                        Download PDF
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- ===========================
+         ABOUT
+    ============================ -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    <i class="ri-information-line"></i>
+                    About TruthLens AI
+                </span>
+
+                <h2 class="section-title">
+                    Fighting Misinformation
+                    <span>Using Artificial Intelligence</span>
+                </h2>
+
+                <p class="section-description">
+
+                    TruthLens AI is designed to help students,
+                    journalists, researchers and everyday internet users
+                    verify online information before believing or sharing it.
+
+                </p>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="glass-card">
+
+                    <h3>🎯 Our Mission</h3>
+
+                    <p>
+
+                        Reduce the spread of fake news by providing
+                        instant AI-powered credibility analysis
+                        that anyone can use.
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>🤖 AI Powered</h3>
+
+                    <p>
+
+                        Our backend combines Machine Learning,
+                        NLP and trusted source verification
+                        to generate confidence scores.
+
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <h3>🌎 Accessible</h3>
+
+                    <p>
+
+                        Built for everyone—from students to
+                        professionals—through a modern,
+                        responsive interface.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         CONTACT
+    ============================ -->
+
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    <i class="ri-customer-service-2-line"></i>
+
+                    Contact
+
+                </span>
+
+                <h2 class="section-title">
+
+                    We'd Love To
+                    <span>Hear From You</span>
+
+                </h2>
+
+            </div>
+
+            <div class="glass-card">
+
+                <form class="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <textarea
+                        placeholder="Write your message..."
+                        rows="6"
+                        required></textarea>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        <i class="ri-send-plane-fill"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         FOOTER
+    ============================ -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <h2 class="logo-text">
+
+                        TruthLens
+                        <span>AI</span>
+
+                    </h2>
+
+                    <p>
+
+                        AI-powered fake news detection platform
+                        built with modern web technologies.
+
+                    </p>
+
+                </div>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+
+                © 2026 TruthLens AI. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+    <div id="authModal" class="auth-modal">
+
+        <div class="auth-box">
+
+            <button id="closeAuth" class="auth-close">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <h2 id="authTitle">Welcome Back</h2>
+
+            <form id="authForm">
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        style="display:none;"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary auth-submit"
+                >
+                    Login
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+
+                <span id="switchText">
+                    Don't have an account?
+                </span>
+
+                <a href="#" id="toggleAuth">
+                    Register
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Report Modal -->
+    <div id="reportModalContainer"></div>
+    <!-- ===========================
+         JAVASCRIPT
+    ============================ -->
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/analyzer.js"></script>
+    <script src="js/report.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/animations.js"></script>
+
+<div id="reportModalContainer"></div>
+</body>
+
+</html>

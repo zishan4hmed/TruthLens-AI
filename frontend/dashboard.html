@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | TruthLens AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>TruthLens AI</h2>
+
+        <ul>
+
+            <li class="active">
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </li>
+
+            <li onclick="window.location.href='history.html'">
+                <i class="ri-history-line"></i>
+                History
+            </li>
+
+            <li onclick="window.location.href='savedReports.html'">
+                <i class="ri-bookmark-line"></i>
+                Saved Reports
+            </li>
+
+            <li onclick="window.location.href='profile.html'">
+                <i class="ri-user-line"></i>
+                Profile
+            </li>
+
+            <li id="logoutBtn">
+                <i class="ri-logout-box-line"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <h1>
+
+            Welcome,
+
+            <span id="userName">
+
+                Loading...
+
+            </span>
+
+        </h1>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="card stat-card">
+
+                <div class="stat-icon blue">
+                    <i class="ri-file-search-line"></i>
+                </div>
+
+                <div>
+
+                    <p>Total Analyses</p>
+
+                    <h2 id="analysisCount">0</h2>
+
+                </div>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <div class="stat-icon green">
+                    <i class="ri-checkbox-circle-fill"></i>
+                </div>
+
+                <div>
+
+                    <p>Real News</p>
+
+                    <h2 id="realCount">0</h2>
+
+                </div>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <div class="stat-icon red">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+
+                <div>
+
+                    <p>Fake News</p>
+
+                    <h2 id="fakeCount">0</h2>
+
+                </div>
+
+            </div>
+
+            <div class="card stat-card">
+
+                <div class="stat-icon purple">
+                    <i class="ri-bar-chart-box-fill"></i>
+                </div>
+
+                <div>
+
+                    <p>Average Confidence</p>
+
+                    <h2 id="avgConfidence">0%</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Profile Card -->
+
+        <section class="profile-card">
+
+            <div class="profile-info">
+
+                <div class="avatar">
+
+                    <i class="ri-user-3-fill"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 id="profileName">
+
+                        Loading...
+
+                    </h2>
+
+                    <p id="profileEmail">
+
+                        Loading...
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Charts -->
+
+        <div class="dashboard-grid">
+
+            <div class="chart-card">
+
+                <h3>
+
+                    Analysis Overview
+
+                </h3>
+
+                <canvas id="analysisChart"></canvas>
+
+            </div>
+
+        </div>
+
+        <!-- History -->
+
+        <section class="history-section">
+
+            <h2>
+
+                Recent Analyses
+
+            </h2>
+
+            <div id="historyContainer">
+
+                Loading...
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

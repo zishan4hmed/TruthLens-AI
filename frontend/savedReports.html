@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Saved Reports | TruthLens AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/savedReports.css"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+<div class="saved-page">
+
+
+    <!-- ==========================================
+         Sidebar
+    =========================================== -->
+
+    <aside class="saved-sidebar">
+
+        <div class="sidebar-brand">
+
+            <h2>TruthLens AI</h2>
+
+            <span>
+                AI News Intelligence
+            </span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="dashboard.html">
+
+                <i class="ri-dashboard-line"></i>
+
+                Dashboard
+
+            </a>
+
+
+            <a href="index.html">
+
+                <i class="ri-sparkling-2-line"></i>
+
+                Analyze News
+
+            </a>
+
+
+            <a
+                href="savedReports.html"
+                class="active"
+            >
+
+                <i class="ri-bookmark-line"></i>
+
+                Saved Reports
+
+            </a>
+
+
+            <a
+                href="dashboard.html"
+                id="profileLink"
+            >
+
+                <i class="ri-user-line"></i>
+
+                Profile
+
+            </a>
+
+
+            <button
+                id="logoutBtn"
+                type="button"
+            >
+
+                <i class="ri-logout-box-line"></i>
+
+                Logout
+
+            </button>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ==========================================
+         Main Content
+    =========================================== -->
+
+    <main class="saved-content">
+
+
+        <!-- Header -->
+
+        <header class="saved-header">
+
+            <div>
+
+                <span class="page-label">
+                    TRUTHLENS AI
+                </span>
+
+                <h1>
+                    Saved Reports
+                </h1>
+
+                <p>
+                    Review your previously saved AI analysis reports.
+                </p>
+
+            </div>
+
+
+            <a
+                href="index.html"
+                class="analyze-new-btn"
+            >
+
+                <i class="ri-add-line"></i>
+
+                Analyze News
+
+            </a>
+
+        </header>
+
+
+
+        <!-- ==========================================
+             Summary
+        =========================================== -->
+
+        <section class="saved-summary">
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+
+                    <i class="ri-file-search-line"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Reports
+                    </span>
+
+                    <strong id="totalReports">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon real-icon">
+
+                    <i class="ri-checkbox-circle-line"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Real News
+                    </span>
+
+                    <strong id="realReports">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon fake-icon">
+
+                    <i class="ri-close-circle-line"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Fake News
+                    </span>
+
+                    <strong id="fakeReports">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             Reports
+        =========================================== -->
+
+        <section class="reports-section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Your Reports
+                    </h2>
+
+                    <p>
+                        Your saved TruthLens AI analyses.
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="clearReportsBtn"
+                    class="clear-btn"
+                    type="button"
+                >
+
+                    <i class="ri-delete-bin-line"></i>
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+
+
+            <!-- Reports will be inserted here -->
+
+            <div id="savedReportsContainer">
+
+                <div class="loading-state">
+
+                    <i class="ri-loader-4-line"></i>
+
+                    Loading saved reports...
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- ==========================================
+     Report View Modal
+=========================================== -->
+
+<div
+    id="viewReportModal"
+    class="view-report-modal"
+>
+
+    <div class="view-report-box">
+
+
+        <button
+            id="closeViewReport"
+            class="view-close"
+            type="button"
+        >
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+
+        <span class="page-label">
+            TRUTHLENS AI
+        </span>
+
+
+        <h2>
+            Saved Analysis Report
+        </h2>
+
+
+        <div
+            id="viewReportContent"
+            class="view-report-content"
+        >
+
+            Loading...
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<script src="js/api.js"></script>
+
+<script src="js/savedReports.js"></script>
+
+
+</body>
+
+</html>

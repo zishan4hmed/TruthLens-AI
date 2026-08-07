@@ -1,0 +1,348 @@
+/* ==========================================
+   TruthLens AI
+   Responsive Stylesheet
+========================================== */
+
+/* ===========================
+   Large Screens
+=========================== */
+
+@media (max-width:1400px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero-content{
+        gap:60px;
+    }
+
+}
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1200px){
+
+    h1{
+        font-size:3rem;
+    }
+
+    .hero-content{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:70px;
+    }
+
+    .hero-left{
+        order:1;
+    }
+
+    .hero-right{
+        order:2;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .floating-card{
+        width:260px;
+    }
+
+    .analyzer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .result-card{
+        margin-top:25px;
+    }
+
+}
+
+/* ===========================
+   Tablets
+=========================== */
+
+@media (max-width:992px){
+
+    section{
+        padding:80px 0;
+    }
+
+    .navbar{
+        padding:16px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-actions{
+        display:none;
+    }
+
+    .mobile-menu-btn{
+        display:flex;
+    }
+
+    .hero{
+        min-height:auto;
+        padding-top:120px;
+    }
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    .section-title{
+        font-size:2.3rem;
+    }
+
+    .glass-card{
+        padding:30px;
+    }
+
+    .analysis-result{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ===========================
+   Mobile Landscape
+=========================== */
+
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:70px 0;
+    }
+
+    h1{
+        font-size:2.3rem;
+        line-height:1.2;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .hero-subtitle{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        width:100%;
+        max-width:280px;
+        justify-content:center;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        align-items:center;
+        gap:18px;
+    }
+
+    .floating-card{
+        width:100%;
+        max-width:340px;
+        margin:auto;
+    }
+
+    .glass-card{
+        padding:25px;
+        border-radius:24px;
+    }
+
+    .upload-zone{
+        padding:35px 20px;
+    }
+
+    .result-card{
+        padding:24px;
+    }
+
+    .analysis-meter{
+        height:12px;
+    }
+
+}
+
+/* ===========================
+   Mobile Portrait
+=========================== */
+
+@media (max-width:576px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .navbar{
+        height:72px;
+    }
+
+    .logo-text{
+        font-size:1.3rem;
+    }
+
+    .hero{
+        padding-top:110px;
+    }
+
+    .hero-content{
+        gap:50px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .glass-card{
+        padding:20px;
+    }
+
+    .upload-zone{
+        padding:30px 18px;
+    }
+
+    .upload-zone i{
+        font-size:46px;
+    }
+
+    .upload-zone h3{
+        font-size:20px;
+    }
+
+    .upload-zone p{
+        font-size:14px;
+    }
+
+    textarea{
+        min-height:180px;
+    }
+
+    .analyze-btn{
+        width:100%;
+    }
+
+    .result-title{
+        font-size:22px;
+    }
+
+    .confidence-value{
+        font-size:34px;
+    }
+
+    .tag{
+        font-size:12px;
+    }
+
+}
+
+/* ===========================
+   Very Small Phones
+=========================== */
+
+@media (max-width:400px){
+
+    h1{
+        font-size:1.7rem;
+    }
+
+    .btn{
+        font-size:14px;
+        padding:14px 22px;
+    }
+
+    .glass-card{
+        padding:18px;
+    }
+
+    .upload-zone{
+        padding:25px 15px;
+    }
+
+    .confidence-value{
+        font-size:28px;
+    }
+
+}
+
+/* ===========================
+   Height Responsive
+=========================== */
+
+@media (max-height:700px){
+
+    .hero{
+        min-height:auto;
+        padding-bottom:80px;
+    }
+
+}
+
+/* ===========================
+   Reduce Motion
+=========================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:0.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:0.01ms !important;
+        scroll-behavior:auto !important;
+    }
+
+}
+
+/* ===========================
+   High Resolution
+=========================== */
+
+@media (min-width:1800px){
+
+    .container{
+        max-width:1500px;
+    }
+
+    h1{
+        font-size:4.4rem;
+    }
+
+    .hero-subtitle{
+        font-size:1.35rem;
+    }
+
+}

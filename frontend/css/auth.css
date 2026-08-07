@@ -1,0 +1,83 @@
+/* ==========================================
+   Auth Modal
+========================================== */
+
+.auth-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.auth-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.auth-box{
+
+    width:430px;
+
+    max-width:90%;
+
+    background:#0f172a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    position:relative;
+
+}
+
+.auth-box h2{
+
+    color:white;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+}
+
+.auth-close{
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}

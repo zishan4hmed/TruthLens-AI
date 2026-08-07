@@ -1,0 +1,144 @@
+/* ==========================================
+   TruthLens AI
+   Premium Navbar
+========================================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    transition:.35s ease;
+    padding:22px 0;
+}
+
+.navbar.scrolled{
+    background:rgba(7,16,28,.82);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.logo i{
+    font-size:42px;
+    color:var(--primary);
+}
+
+.logo-text{
+    font-size:2rem;
+    font-weight:700;
+    color:#fff;
+}
+
+.logo-text span{
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:42px;
+}
+
+.nav-links a{
+    color:#fff;
+    font-weight:500;
+    position:relative;
+    transition:.3s;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:var(--primary);
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* Buttons */
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.mobile-menu-btn{
+    display:none;
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.06);
+    color:#fff;
+    cursor:pointer;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-actions{
+        display:none;
+    }
+
+    .mobile-menu-btn{
+        display:flex;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:18px 0;
+    }
+
+    .logo-text{
+        font-size:1.5rem;
+    }
+
+    .logo i{
+        font-size:34px;
+    }
+
+}

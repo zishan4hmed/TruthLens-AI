@@ -1,0 +1,745 @@
+/* ==========================================
+   TruthLens AI - Global Styles
+   ========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Root Variables */
+
+:root{
+
+    --primary:#4FC3F7;
+    --primary-dark:#00B8D4;
+
+    --secondary:#7C3AED;
+
+    --background:#081420;
+    --background-light:#112240;
+
+    --card:rgba(255,255,255,.08);
+
+    --white:#FFFFFF;
+
+    --gray:#D1D5DB;
+
+    --success:#22C55E;
+
+    --danger:#EF4444;
+
+    --border:rgba(255,255,255,.15);
+
+    --shadow:0 10px 35px rgba(0,0,0,.35);
+
+    --transition:.35s ease;
+
+    --radius:18px;
+
+}
+
+/* Scroll */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--background),
+        var(--background-light)
+    );
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* Images */
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* Buttons */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+}
+
+/* Inputs */
+
+input,
+textarea{
+
+    font-family:'Poppins',sans-serif;
+
+    outline:none;
+
+}
+
+/* Lists */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* Sections */
+
+section{
+
+    padding:90px 8%;
+
+}
+
+/* Container */
+
+.container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+/* Headings */
+
+h1{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+}
+
+h3{
+
+    font-size:24px;
+
+}
+
+p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/* Highlight Text */
+
+.highlight{
+
+    color:var(--primary);
+
+}
+
+/* Primary Button */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--primary-dark);
+
+    box-shadow:
+    0 10px 25px rgba(79,195,247,.35);
+
+}
+
+/* Secondary Button */
+
+.btn-outline{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    background:transparent;
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* Glass Card */
+
+.glass{
+
+    background:var(--card);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* Section Title */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* Gradient Text */
+
+.gradient-text{
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* Utility */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{
+
+    margin-top:10px;
+
+}
+
+.mt-2{
+
+    margin-top:20px;
+
+}
+
+.mt-3{
+
+    margin-top:30px;
+
+}
+
+.mt-4{
+
+    margin-top:40px;
+
+}
+
+.mt-5{
+
+    margin-top:50px;
+
+}
+
+/* Selection */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:9px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#06101a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+/* ==========================================
+   TruthLens AI Premium Toast
+========================================== */
+
+.truthlens-toast{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    min-width:340px;
+
+    max-width:420px;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:rgba(10,20,38,.94);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(56,189,248,.08);
+
+    color:#fff;
+
+    z-index:99999;
+
+    opacity:0;
+
+    transform:
+        translateX(120%);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease;
+
+}
+
+
+.truthlens-toast.show{
+
+    opacity:1;
+
+    transform:
+        translateX(0);
+
+}
+
+
+/* ==========================================
+   Icon
+========================================== */
+
+.toast-icon{
+
+    width:42px;
+
+    height:42px;
+
+    min-width:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+}
+
+
+.truthlens-toast.success
+.toast-icon{
+
+    background:rgba(34,197,94,.15);
+
+    color:#22c55e;
+
+    box-shadow:
+        0 0 20px rgba(34,197,94,.15);
+
+}
+
+
+.truthlens-toast.error
+.toast-icon{
+
+    background:rgba(239,68,68,.15);
+
+    color:#ef4444;
+
+}
+
+
+/* ==========================================
+   Content
+========================================== */
+
+.toast-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+    flex:1;
+
+}
+
+
+.toast-content strong{
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+
+.toast-content span{
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    line-height:1.4;
+
+}
+
+
+/* ==========================================
+   Close
+========================================== */
+
+.toast-close{
+
+    border:none;
+
+    background:transparent;
+
+    color:#64748b;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+.toast-close:hover{
+
+    color:#fff;
+
+    transform:rotate(90deg);
+
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media(max-width:500px){
+
+    .truthlens-toast{
+
+        left:15px;
+
+        right:15px;
+
+        top:15px;
+
+        min-width:auto;
+
+        max-width:none;
+
+    }
+
+}
+/* ==========================================
+   TruthLens AI
+   Premium Toast Notifications
+========================================== */
+
+.truthlens-toast {
+
+    position: fixed;
+
+    top: 25px;
+
+    right: 25px;
+
+    width: min(400px, calc(100vw - 40px));
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 18px;
+
+    background: rgba(15, 30, 52, 0.96);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(56,189,248,.08);
+
+    backdrop-filter: blur(18px);
+
+    color: #fff;
+
+    z-index: 99999;
+
+    opacity: 0;
+
+    transform: translateX(120%);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+
+.truthlens-toast.show {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+.toast-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+}
+
+
+.truthlens-toast.success
+.toast-icon {
+
+    color: #22c55e;
+
+    background: rgba(34,197,94,.12);
+
+}
+
+
+.truthlens-toast.error
+.toast-icon {
+
+    color: #ef4444;
+
+    background: rgba(239,68,68,.12);
+
+}
+
+
+.toast-content {
+
+    flex: 1;
+
+}
+
+
+.toast-content strong {
+
+    display: block;
+
+    font-size: 15px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.toast-content p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+.toast-close {
+
+    width: 32px;
+
+    height: 32px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #94a3b8;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+    border-radius: 8px;
+
+}
+
+
+.toast-close:hover {
+
+    color: #fff;
+
+    background: rgba(255,255,255,.08);
+
+}
+
+
+@media(max-width:600px) {
+
+    .truthlens-toast {
+
+        top: 15px;
+
+        right: 15px;
+
+        left: 15px;
+
+        width: auto;
+
+    }
+
+}
