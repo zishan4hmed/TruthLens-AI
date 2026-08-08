@@ -1,0 +1,293 @@
+/* ==========================================
+   TruthLens AI
+   Profile Page
+========================================== */
+
+.profile-page {
+
+    min-height:100vh;
+
+    padding:60px 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+
+.profile-container {
+
+    width:min(900px,100%);
+
+}
+
+
+/* Header */
+
+.profile-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.profile-label {
+
+    color:#38bdf8;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+.profile-header h1 {
+
+    margin:8px 0;
+
+    font-size:38px;
+
+}
+
+
+.profile-header p {
+
+    color:#94a3b8;
+
+}
+
+
+.profile-avatar {
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    color:#38bdf8;
+
+    background:rgba(56,189,248,.12);
+
+    border:1px solid rgba(56,189,248,.25);
+
+}
+
+
+/* Card */
+
+.profile-card {
+
+    padding:32px;
+
+    border-radius:24px;
+
+    background:rgba(15,30,52,.75);
+
+    border:1px solid rgba(255,255,255,.09);
+
+    box-shadow:0 25px 70px rgba(0,0,0,.3);
+
+}
+
+
+.profile-card-title {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:28px;
+
+}
+
+
+.profile-card-title i {
+
+    color:#38bdf8;
+
+    font-size:24px;
+
+}
+
+
+.profile-card-title h2 {
+
+    margin:0;
+
+}
+
+
+/* Information */
+
+.profile-info-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+
+.profile-info {
+
+    padding:20px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.07);
+
+}
+
+
+.profile-info span {
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    margin-bottom:9px;
+
+}
+
+
+.profile-info span i {
+
+    margin-right:6px;
+
+}
+
+
+.profile-info strong {
+
+    font-size:18px;
+
+    color:#fff;
+
+}
+
+
+.status-active {
+
+    color:#22c55e !important;
+
+}
+
+
+/* Buttons */
+
+.profile-actions {
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+
+.profile-btn {
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+
+.profile-btn.secondary:hover {
+
+    background:rgba(56,189,248,.12);
+
+}
+
+
+.profile-btn.danger:hover {
+
+    background:rgba(239,68,68,.15);
+
+}
+
+
+/* Mobile */
+
+@media(max-width:700px) {
+
+    .profile-header {
+
+        align-items:flex-start;
+
+    }
+
+
+    .profile-header h1 {
+
+        font-size:30px;
+
+    }
+
+
+    .profile-avatar {
+
+        width:55px;
+
+        height:55px;
+
+        font-size:25px;
+
+    }
+
+
+    .profile-info-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .profile-actions {
+
+        flex-direction:column;
+
+    }
+
+}

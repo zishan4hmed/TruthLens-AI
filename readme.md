@@ -527,6 +527,32 @@ Possible future improvements include:
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![TruthLens AI Home](screenshots/home.png)
+
+### 🧠 AI Analysis Report
+
+![AI Analysis Report](screenshots/analysis-report.png)
+
+### 📊 Dashboard
+
+![TruthLens AI Dashboard](screenshots/dashboard.png)
+
+### 💾 Saved Reports
+
+![Saved Reports](screenshots/saved-reports.png)
+
+### 📜 Analysis History
+
+![Analysis History](screenshots/analysis-history.png)
+
+### 👤 Profile
+
+![Profile](screenshots/profile.png)
+
 ## 👨‍💻 Developer
 
 **Zishan Ahmad**

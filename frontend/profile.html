@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile | TruthLens AI</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/profile.css"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+         Profile Page
+    =========================================== -->
+
+    <main class="profile-page">
+
+        <div class="profile-container">
+
+
+            <!-- Header -->
+
+            <div class="profile-header">
+
+                <div>
+
+                    <span class="profile-label">
+                        TRUTHLENS AI
+                    </span>
+
+                    <h1>
+                        My Profile
+                    </h1>
+
+                    <p>
+                        Manage your TruthLens AI account
+                    </p>
+
+                </div>
+
+
+                <div class="profile-avatar">
+
+                    <i class="ri-user-3-line"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile Card -->
+
+            <section class="profile-card">
+
+                <div class="profile-card-title">
+
+                    <i class="ri-user-settings-line"></i>
+
+                    <h2>
+                        Account Information
+                    </h2>
+
+                </div>
+
+
+                <div class="profile-info-grid">
+
+
+                    <div class="profile-info">
+
+                        <span>
+                            <i class="ri-user-line"></i>
+                            Full Name
+                        </span>
+
+                        <strong id="profileName">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-info">
+
+                        <span>
+                            <i class="ri-mail-line"></i>
+                            Email Address
+                        </span>
+
+                        <strong id="profileEmail">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-info">
+
+                        <span>
+                            <i class="ri-shield-check-line"></i>
+                            Account Status
+                        </span>
+
+                        <strong class="status-active">
+                            Active
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-info">
+
+                        <span>
+                            <i class="ri-bar-chart-line"></i>
+                            Total Analyses
+                        </span>
+
+                        <strong id="analysisCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Actions -->
+
+            <div class="profile-actions">
+
+                <button
+                    type="button"
+                    id="dashboardBtn"
+                    class="profile-btn secondary"
+                >
+
+                    <i class="ri-dashboard-line"></i>
+
+                    Dashboard
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="logoutBtn"
+                    class="profile-btn danger"
+                >
+
+                    <i class="ri-logout-box-r-line"></i>
+
+                    Logout
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="js/api.js"></script>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
