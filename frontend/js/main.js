@@ -18,6 +18,8 @@ function initializeApp(){
 
     setupNavbar();
 
+    setupMobileMenu();
+
     setupSmoothScroll();
 
     setupHeroButtons();
@@ -36,10 +38,6 @@ function initializeApp(){
 
 }
 
-/* ==========================================
-   Navbar
-========================================== */
-
 function setupNavbar(){
 
     const navbar = document.querySelector(".navbar");
@@ -49,15 +47,10 @@ function setupNavbar(){
     function updateNavbar(){
 
         if(window.scrollY > 30){
-
             navbar.classList.add("scrolled");
-
         }
-
         else{
-
             navbar.classList.remove("scrolled");
-
         }
 
     }
@@ -65,6 +58,59 @@ function setupNavbar(){
     updateNavbar();
 
     window.addEventListener("scroll", updateNavbar);
+
+}
+
+
+/* ==========================================
+   Mobile Menu
+========================================== */
+
+function setupMobileMenu(){
+
+    const menuButton =
+        document.querySelector(".mobile-menu-btn");
+
+    const mobileMenu =
+        document.getElementById("mobileMenu");
+
+    if(!menuButton || !mobileMenu) return;
+
+    menuButton.addEventListener("click",()=>{
+
+        mobileMenu.classList.toggle("active");
+
+        const icon =
+            menuButton.querySelector("i");
+
+        if(mobileMenu.classList.contains("active")){
+            icon.className = "ri-close-line";
+        }
+        else{
+            icon.className = "ri-menu-line";
+        }
+
+    });
+
+    /* Close menu after clicking a link */
+
+    const links =
+        mobileMenu.querySelectorAll("a");
+
+    links.forEach(link=>{
+
+        link.addEventListener("click",()=>{
+
+            mobileMenu.classList.remove("active");
+
+            const icon =
+                menuButton.querySelector("i");
+
+            icon.className = "ri-menu-line";
+
+        });
+
+    });
 
 }
 

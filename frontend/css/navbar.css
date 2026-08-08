@@ -142,3 +142,65 @@
     }
 
 }
+/* ==========================================
+   Mobile Menu
+========================================== */
+
+.mobile-menu{
+    display:none;
+}
+
+@media(max-width:992px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-actions{
+        display:none;
+    }
+
+    .mobile-menu-btn{
+        display:flex;
+    }
+
+    .mobile-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        padding:24px;
+        background:rgba(7,16,28,.97);
+        backdrop-filter:blur(20px);
+        -webkit-backdrop-filter:blur(20px);
+        border-top:1px solid rgba(255,255,255,.08);
+        box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .mobile-menu.active{
+        display:flex;
+    }
+
+    .mobile-menu a{
+        display:block;
+        color:#fff;
+        text-decoration:none;
+        font-size:16px;
+        font-weight:500;
+        padding:13px 5px;
+    }
+
+    .mobile-menu a:hover{
+        color:var(--primary);
+    }
+
+    .mobile-menu .btn{
+        width:100%;
+        justify-content:center;
+        margin-top:5px;
+    }
+
+}
