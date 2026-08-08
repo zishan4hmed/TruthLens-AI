@@ -11,7 +11,7 @@
 
 const API = {
 
-    BASE_URL: "http://localhost:5000/api",
+    BASE_URL: "https://truthlens-ai-9qja.onrender.com/api",
 
     ENDPOINTS: {
 
