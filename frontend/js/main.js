@@ -111,6 +111,57 @@ function setupMobileMenu(){
         });
 
     });
+    /* Mobile Login Button */
+
+    const mobileLoginBtn =
+        document.getElementById("mobileLoginBtn");
+
+    const desktopLoginBtn =
+        document.getElementById("loginBtn");
+
+    if (mobileLoginBtn && desktopLoginBtn) {
+
+        mobileLoginBtn.addEventListener("click", () => {
+
+            desktopLoginBtn.click();
+
+            mobileMenu.classList.remove("active");
+
+            const icon =
+                menuButton.querySelector("i");
+
+            icon.className = "ri-menu-line";
+
+        });
+
+    }
+
+
+    /* Mobile Get Started Button */
+
+    const mobileDashboardBtn =
+        document.getElementById("mobileDashboardBtn");
+
+    const desktopDashboardBtn =
+        document.getElementById("dashboardBtn");
+
+    if (mobileDashboardBtn && desktopDashboardBtn) {
+
+        mobileDashboardBtn.addEventListener("click", () => {
+
+            desktopDashboardBtn.click();
+
+            mobileMenu.classList.remove("active");
+
+            const icon =
+                menuButton.querySelector("i");
+
+            icon.className = "ri-menu-line";
+
+        });
+
+    }
+
 
 }
 
